@@ -1,0 +1,44 @@
+html,
+body,
+#app {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    // overflow: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;  
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(68.3deg, rgb(23, 41, 77) 6.3%, rgb(243, 113, 154) 90.9%);    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(68.3deg, rgb(23, 41, 77) 6.3%, rgb(243, 113, 154) 90.9%);  }
+
+.light body {
+    background-image: radial-gradient(circle, #fcfafb, #f1eff2, #e4e5ea, #d6dce1, #c8d3d6);
+    background-attachment:fixed;
+}
+
+.dark body {
+  background-image: radial-gradient(circle, #2c3e50, #2b2e3c, #241f28, #181316, #000000);
+    background-attachment:fixed;
+}
+
+* {
+    box-sizing: border-box;
+}

@@ -1,0 +1,22 @@
+[
+    {
+        "repo": "react-ts-express",
+        "name": "react-ts-express",
+        "description": "👾 Minimalistic hot reloaded Express + TS + React"
+    },
+    {
+        "repo": "Monitor",
+        "name": "Monitor",
+        "description": "💻 Community restock monitor template"
+    },
+    {
+        "repo": "Residential",
+        "name": "Residential",
+        "description": "🏡 Sample professional and simple web designs for residential marketing"
+    },
+    {
+        "repo": "SkeyaNime",
+        "name": "SkeyaNime",
+        "description": "✨ Image sharing platform and API for anime"
+    }
+]
