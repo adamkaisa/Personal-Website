@@ -14,7 +14,7 @@
         "name": "SkeyaNime",
         "description": "✨ Image sharing platform and API for anime"
     },
-        {
+    {
         "repo": "VueCommerce",
         "name": "VueCommerce",
         "description": "🛒A Simple Modern E-Commerce Product Display with Dark and Light Mode made in Vue.js"
@@ -28,5 +28,5 @@
         "repo": "react-ts-express",
         "name": "react-ts-express",
         "description": "⚡️ Minimalistic hot reloaded Express + TS + React"
-    },
+    }
 ]
