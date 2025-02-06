@@ -12,17 +12,17 @@
     {
         "repo": "SkeyaNime",
         "name": "SkeyaNime",
-        "description": "✨ Image sharing platform and API for anime"
+        "description": "✨ Anime Image sharing platform with REST API"
     },
     {
         "repo": "VueCommerce",
         "name": "VueCommerce",
-        "description": "🛒A Simple Modern E-Commerce Product Display with Dark and Light Mode made in Vue.js"
+        "description": "🛒A Simple Modern Display Product E-Commerce with Dark and Light Mode made in Vue.js"
     },
     {
         "repo": "To-Do-List",
         "name": "To-Do-List",
-        "description": "📝A Simple Modern To-Do List with LocalStorage + Dark and Light Mode made in Vue.js"
+        "description": "📝A Simple To-Do List with LocalStorage + Dark and Light Mode made in Vue.js"
     },
     {
         "repo": "react-ts-express",
