@@ -2,7 +2,7 @@
     {
         "repo": "Mity",
         "name": "Mity",
-        "description": "👾 Advanced multipurpose bot to make server moderation with many things"
+        "description": "👾Advanced multipurpose Discord bot to make server moderation with many things. Bot build with Discord.Js + JavaScript and seperate Website build with VitePress."
     },
     {
         "repo": "Personal-Website",
