@@ -1,32 +1,32 @@
 [
     {
-        "repo": "Mity",
-        "name": "Mity",
-        "description": "👾Advanced multipurpose Discord bot to make server moderation with many things. Bot build with Discord.Js + JavaScript and with VitePress."
+        "repo": "Mity-Website",
+        "name": "Mity-Website",
+        "description": "👾A Website for Mity Discord bot using VitePress"
     },
     {
         "repo": "Personal-Website",
         "name": "Personal-Website",
-        "description": "📜 My Personal Website build with Spotify API + Vue.js."
+        "description": "📜 My Personal Website using Spotify API + Vue.js"
     },
     {
         "repo": "SkeyaNime",
         "name": "SkeyaNime",
-        "description": "✨ Anime Image sharing platform with REST API."
+        "description": "✨ Anime Image sharing platform with REST API"
     },
     {
         "repo": "VueCommerce",
         "name": "VueCommerce",
-        "description": "🛒A Simple Modern Display Product E-Commerce with Dark and Light Mode made in Vue.js."
+        "description": "🛒A Simple Modern Display Product E-Commerce with Dark and Light Mode using Vue.js"
     },
     {
         "repo": "To-Do-List",
         "name": "To-Do-List",
-        "description": "📝A Simple To-Do List with LocalStorage + Dark and Light Mode made in Vue.js."
+        "description": "📝A Simple To-Do List with LocalStorage + Dark and Light Mode using Vue.js"
     },
     {
         "repo": "react-ts-express",
         "name": "react-ts-express",
-        "description": "⚡️ Minimalistic hot reloaded Express + TS + React."
+        "description": "⚡️ Minimalistic hot reloaded Express + TS + React"
     }
 ]
