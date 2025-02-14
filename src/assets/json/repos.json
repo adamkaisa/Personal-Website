@@ -37,6 +37,6 @@
     {
         "repo": "react-ts-express",
         "name": "react-ts-express",
-        "description": "⚡️ Minimalistic hot reloaded Express + TS + React"
+        "description": "⚡️ Minimalistic hot reloaded Express.js + React.js + TypeScript"
     }
 ]
