@@ -1,5 +1,15 @@
 [
     {
+        "repo": "Yellow-Taxi-Trip-Data",
+        "name": "Yellow-Taxi-Trip-Data",
+        "description": "🚖 Yellow Taxi Trip Data Platform is a full-stack React.js project with a real-time dashboard for NYC taxi trips. It processes data in Supabase (PostgreSQL + PostGIS) and visualizes it with interactive maps and charts"
+    },
+    {
+        "repo": "Ashoka-View",
+        "name": "Ashoka-View",
+        "description": "🏡 Simple professional and modern web designs for Ashoka View"
+    },
+    {
         "repo": "Mity-Website",
         "name": "Mity-Website",
         "description": "👾A Website for Mity Discord bot using VitePress"
