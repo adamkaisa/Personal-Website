@@ -1,9 +1,10 @@
 <template>
     <Card title="Who am I ?" size="not-set">
-        I'm a self-taught developer from Depok, West Java Indonesia. I'm currently as graduate college student, 
-        interested in every aspect of computer science, electronics and science. To be honest, 
-        I'm a bit of a nerd. I love to learn and I always try to improve myself. I enjoy listening japanese music 
-        and i've been self-learning japanese language more than 1 year. I love to watching about 
-        any topic but my favorites are sci-fi, psychology and history.
+        I am an advanced website developer. I am passionate about creating intuitive user experiences through responsive website design and development. 
+        With proficiency in various programming languages and relevant technologies, 
+        I adhere to clean and efficient coding principles in all projects I undertake.<p>
+            Mostly the sources i use like JavaScript, Node.Js, Vue.Js, Next.Js, MySQL, Microsoft SQL Server and MongoDB. 
+            I'm really confident with my English and I'm during learn Japanese (It's been 380+ days and still continue until now).
+        </p>
     </Card>
 </template>
