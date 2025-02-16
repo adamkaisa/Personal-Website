@@ -24,7 +24,7 @@
                         >Current</span
                     >
                     <span class="text-base text-slate-700 dark:text-neutral-200"
-                        >Working as front-end developer</span
+                        >Working as full-stack developer</span
                     >
                 </div>
 
