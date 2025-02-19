@@ -1,0 +1,42 @@
+[
+    {
+        "repo": "Mity-Website",
+        "name": "Mity-Website",
+        "description": "👾A Website for Mity Discord bot using VitePress"
+    },
+    {
+        "repo": "Personal-Website",
+        "name": "Personal-Website",
+        "description": "📜 My Personal Website using Spotify, Discord and GitHub API + Vue.js"
+    },
+    {
+        "repo": "SkeyaNime",
+        "name": "SkeyaNime",
+        "description": "✨ Image sharing platform and API for anime"
+    },
+    {
+        "repo": "VueCommerce",
+        "name": "VueCommerce",
+        "description": "🛒A Simple Modern E-Commerce Product Display with Dark and Light Mode made in Vue.js"
+    },
+    {
+        "repo": "To-Do-List",
+        "name": "To-Do-List",
+        "description": "📝A Simple Modern To-Do List with LocalStorage + Dark and Light Mode made in Vue.js"
+    },
+    {
+        "repo": "react-ts-express",
+        "name": "react-ts-express",
+        "description": "⚡️ Minimalistic hot reloaded Express + TS + React"
+    },
+    {
+        "repo": "Ashoka-View",
+        "name": "Ashoka-View",
+        "description": "🏡 Simple professional and modern web designs for Ashoka View"
+    },
+    {
+        "repo": "Yellow-Taxi-Trip-Data",
+        "name": "Yellow-Taxi-Trip-Data",
+        "description": "🚖 Yellow Taxi Trip Data Platform is a full-stack React.js project with a real-time dashboard for NYC taxi trips. It processes data in Supabase (PostgreSQL + PostGIS) and visualizes it with interactive maps and charts"
+    }
+]
