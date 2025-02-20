@@ -1,221 +1,130 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap');
+<template>
+    <div class="profile sc-flex-center font-nunito flex-row flex-wrap-reverse gap-5 md:gap-10" v-if="user">
+        <div class="profile-info flex-items-start flex-content-center flex w-auto flex-col gap-4">
+            <span class="name font-roboto text-5xl font-bold tracking-wide">
+                <div class="marquee-container">
+                    <div class="marquee">
+                        <div class="marquee-content">
+                            <span v-for="i in 10" :key="i">ADAM KHAIRUSYDAN✽</span>
+                        </div>
+                        <div class="marquee-content">
+                            <span v-for="i in 10" :key="i">ADAM KHAIRUSYDAN✽</span>
+                        </div>
+                    </div>
+                </div>
+            </span>
+            <div class="presence sc-flex-center gap-3 text-lg">
+                <span class="status sc-flex-center">
+                    <span
+                        class="status-icon mr-1 inline-block h-4 w-4 rounded-full"
+                        :style="{ backgroundColor: statusColor }"
+                    ></span>
+                    <span class="status-text text-slate-700 dark:text-neutral-400">{{ user.status }}</span>
+                </span>
 
-@font-face {
-  font-family: 'Varoste';
-  src: url('/fonts/Varoste.otf') format('opentype'),
-       url('/fonts/Varoste.ttf') format('truetype');
-  font-style: normal;
-  font-display: swap;
-}
+                <span class="divider inline-block h-1 w-1 rounded-full bg-slate-300 dark:bg-neutral-900"></span>
+                <span class="custom-status text-slate-500 dark:text-neutral-400">{{
+                    user.custom_status || randomQuote
+                }}</span>
+            </div>
 
-
-html,
-body,
-#app {
-    
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    // overflow: scroll;
-    overflow-x: hidden;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;  
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    border-radius: 10px;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: linear-gradient(68.3deg, rgb(23, 41, 77) 6.3%, rgb(243, 113, 154) 90.9%);
-    border-radius: 10px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(68.3deg, rgb(23, 41, 77) 6.3%, rgb(243, 113, 154) 90.9%);  }
-
-.light body {
-    background: #f0f0f0;
-    background-attachment:fixed;
-}
-
-.dark body {
-  background: #171717;
-    background-attachment:fixed;
-}
-
-* {
-    box-sizing: border-box;
-}
+            <span class="links flex w-full items-center justify-start gap-4">
+                <a
+                    v-for="link in links"
+                    :href="link.href"
+                    target="_blank"
+                    class="sc-flex-center rd-2 group p-2 transition-all duration-300"
+                >
+                    <component :is="link.icon" class="h-7 w-7" />
+                </a>
+            </span>
 
 
+        </div>
 
-.profile-container {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
+        <img :src="user.avatar" alt="" class="profile-avatar rd-2 shadow-avatar-color h-64 w-64 shadow-lg" />
+    </div>
+</template>
 
-.marquee-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100vw;
-  overflow: hidden;
-  white-space: nowrap;
-  transform: translate(-50%, -50%);
-}
+<script setup lang="ts">
+    import { useDiscordStore } from '@/stores/discord'
+    // @ts-ignore
+    import ColorThief from '@/assets/js/color-thief.mjs'
+    const colorThief = new ColorThief()
 
-.marquee {
-  display: flex;
-  width: max-content;
-  animation: marquee 100s linear infinite;
-  color: #3d3b3c;
-}
+    const discordStore = useDiscordStore()
+    const user = computed(() => discordStore.user)
 
-.dark .marquee span {
-  color: #f2f0ef;
-}
+    const colors = {
+        online: '#43b581',
+        idle: '#faa61a',
+        dnd: '#f04747',
+        offline: '#747f8d'
+    }
 
-.marquee span {
-  font-family: 'Varoste', sans-serif ;
-  font-weight: 500;
-  font-size: 20rem;
-  padding-right: 2rem;
-}
+    const statusColor = computed((): string => {
+        const status = user.value?.status
+        if (!status) return colors.offline
+        // @ts-ignore
+        return colors[status]
+    })
 
-@keyframes marquee {
-  from {
-      transform: translateX(0%);
-  }
-  to {
-      transform: translateX(-50%);
-  }
-}
-.marquee {
-  animation: marquee 200s linear infinite;
-}
+    const randomQuote = computed(() => {
+        const quotes = [
+            '👨‍💻😅',
+            '👨‍💻😓',
+            '👨‍💻😫',
+            '👨‍💻😭',
+            '👨‍💻🤕'
+        ]
+        return quotes[Math.floor(Math.random() * quotes.length)]
+    })
 
-.profile-avatar {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 50px;
-  height: 50px;
-  border-radius: 20%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease-in-out;
-}
+    const links = [
+        {
+            href: 'mailto:khairusydan99@gmail.com',
+            icon: defineAsyncComponent(() => import('@/assets/svg/AtSign.vue'))
+        },
+        {
+            href: 'https://linkedin.com/in/adam-khairusydan-b89464193',
+            icon: defineAsyncComponent(() => import('@/assets/svg/LinkedIn.vue'))
+        },
+        {
+            href: 'https://github.com/adamkaisa',
+            icon: defineAsyncComponent(() => import('@/assets/svg/GitHub.vue'))
+        },
+        {
+            href: 'https://discord.com/users/474239882877730837',
+            icon: defineAsyncComponent(() => import('@/assets/svg/Discord.vue'))
+        }
+    ]
 
+    const emit = defineEmits(['fetch-failed'])
 
-.presence {
-  position: absolute;
-  top: 20px; 
-  right: 80px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
+    const fetchUser = async () => {
+        try {
+            await discordStore.fetchUser()
+        } catch (error) {
+            emit('fetch-failed', error)
+        }
+    }
 
-  padding: 8px 12px;
-  border-radius: 8px;
-}
+    await fetchUser()
 
-.status {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 16px;
-  color: white;
-}
+    onMounted(() => {
+        setInterval(fetchUser, 1000 * 30)
 
-.status-icon {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-}
-
-.divider {
-  width: 4px;
-  height: 4px;
-  background: #3d3b3c;
-  border-radius: 50%;
-}
-
-.dark .divider {
-  background: #f2f0ef;
-}
-
-.custom-status {
-  font-size: 14px;
-  color: #bbb;
-}
-
-.links {
-  position: absolute;
-  top: 20px;
-  right: -1%;
-  display: flex;
-  flex-direction: row; 
-  gap: 10px;
-}
-
-.links a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  background: #c9c8c7;
-  border-radius: 8px;
-  transition: background 0.3s ease;
-}
-
-.links a:hover {
-  background: #949392;
-}
-
-.dark .links a:hover {
-  background: #3d3b3c;
-}
-
-.dark .links a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  background: #282828;
-  border-radius: 8px;
-  transition: background 0.3s ease;
-}
-
-.links a > * {
-  stroke: #3d3b3c;
-  transition: stroke 0.3s ease;
-}
-
-.dark .links a > * {
-  stroke: #f2f0ef;
-}
-
-@media (max-width: 768px) {
-  .links {
-    flex-direction: column;
-    align-items: flex-start;
-    left: 20px;
-    right: auto;
-  }
-}
+        const img: HTMLImageElement | null = document.querySelector('.profile-avatar')
+        if (!img) return
+        img.crossOrigin = 'Anonymous'
+        if (img.complete) {
+            const color = colorThief.getColor(img)
+            document.documentElement.style.setProperty('--avatar-color', `rgb(${color.join(',')}, 0.7)`)
+        } else {
+            img.addEventListener('load', () => {
+                const color = colorThief.getColor(img)
+                document.documentElement.style.setProperty('--avatar-color', `rgb(${color.join(',')}, 0.7)`)
+            })
+        }
+    })
+</script>
