@@ -7,7 +7,7 @@
 <style>
     .copyright {
         position: fixed;
-        bottom: 1.5rem;
+        bottom: 1.6rem;
         right: 1rem;
         font-size: 0.875rem;
         color: #3d3b3c;
