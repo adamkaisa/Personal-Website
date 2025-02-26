@@ -11,14 +11,14 @@
 
                 <div class="goal-item">
                     <span class="goal-status current">Current</span>
-                    <span class="goal-text">Working as front-end developer</span>
+                    <span class="goal-text">Find job as Full-Stack Developer/Data Analyst</span>
                 </div>
 
                 <ArrowDown class="goal-arrow" />
 
                 <div class="goal-item">
                     <span class="goal-status next">Next</span>
-                    <span class="goal-text">Get a job as a developer in USA or Japan</span>
+                    <span class="goal-text">Get a proper job in USA or Japan</span>
                 </div>
             </div>
         </template>
