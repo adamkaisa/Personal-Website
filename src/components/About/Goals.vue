@@ -18,7 +18,7 @@
 
                 <div class="goal-item">
                     <span class="goal-status next">Next</span>
-                    <span class="goal-text">Get a proper job in USA or Japan</span>
+                    <span class="goal-text">Get a proper job in the USA or Japan</span>
                 </div>
             </div>
         </template>
