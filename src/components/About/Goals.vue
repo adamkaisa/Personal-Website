@@ -4,7 +4,7 @@
             <div class="goals-container">
                 <div class="goal-item">
                     <span class="goal-status done">Done</span>
-                    <span class="goal-text">Graduated with a bachelor's degree in Informatics Engineering</span>
+                    <span class="goal-text">Graduated with a bachelor's in Informatics Engineering</span>
                 </div>
 
                 <ArrowDown class="goal-arrow" />
