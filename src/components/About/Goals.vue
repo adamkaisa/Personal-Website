@@ -11,7 +11,7 @@
 
                 <div class="goal-item">
                     <span class="goal-status current">Current</span>
-                    <span class="goal-text">Find job as Full-Stack Developer/Data Analyst</span>
+                    <span class="goal-text">Find a job as a Full-Stack Developer/Data Analyst</span>
                 </div>
 
                 <ArrowDown class="goal-arrow" />
