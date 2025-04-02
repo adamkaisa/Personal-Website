@@ -19,7 +19,7 @@
 <style scoped>
 
 .page-name {
-  font-family: 'Varoste', sans-serif ;
+  font-family: 'KATSUMI', sans-serif ;
   display: none;
   font-size: 1.875rem;
 }
