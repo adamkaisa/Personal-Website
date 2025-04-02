@@ -7,11 +7,11 @@
 <style>
     .copyright {
         position: fixed;
-        bottom: 1.6rem;
+        bottom: 1.8rem;
         right: 1rem;
         font-size: 0.875rem;
         color: #3d3b3c;
-        font-family: 'Varoste', sans-serif ;
+        font-family: 'KATSUMI', sans-serif ;
         letter-spacing: 1px;
     }
 
