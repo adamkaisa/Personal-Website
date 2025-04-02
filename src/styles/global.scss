@@ -9,6 +9,13 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'KATSUMI';
+  src: url('/fonts/KATSUMI.otf') format('opentype'),
+       url('/fonts/KATSUMI.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
 
 html,
 body,
@@ -91,9 +98,9 @@ body,
 }
 
 .marquee span {
-  font-family: 'Varoste', sans-serif ;
+  font-family: 'KATSUMI', sans-serif ;
   font-weight: 500;
-  font-size: 20rem;
+  font-size: 15rem;
   padding-right: 2rem;
 }
 
