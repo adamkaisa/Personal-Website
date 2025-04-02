@@ -59,7 +59,7 @@
 
 /* Nav Button */
 .nav-btn {
-  font-family: 'Varoste', sans-serif ;
+  font-family: 'KATSUMI', sans-serif ;
   letter-spacing: 1px;
   font-size: 18px;
   font-weight: bold;
