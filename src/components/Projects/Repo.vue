@@ -105,7 +105,7 @@
 
 /* Header */
 .custom-header {
-  font-family: 'Varoste', sans-serif ;
+  font-family: 'KATSUMI', sans-serif ;
   letter-spacing: 2px;
   display: flex;
   align-items: center;
