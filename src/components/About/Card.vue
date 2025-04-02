@@ -50,7 +50,7 @@ const avatar = new URL('@/assets/profile.jpg', import.meta.url).href;
 
 /* Judul */
 .custom-title {
-  font-family: 'Varoste', sans-serif ;
+  font-family: 'KATSUMI', sans-serif ;
   letter-spacing: 2px;
   font-size: 1.5rem;
   font-weight: bold;
