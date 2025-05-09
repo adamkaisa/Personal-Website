@@ -86,7 +86,7 @@
             icon: defineAsyncComponent(() => import('@/assets/svg/AtSign.vue'))
         },
         {
-            href: 'https://linkedin.com/in/adam-khairusydan-b89464193',
+            href: 'https://www.linkedin.com/in/adamkhairusydan/',
             icon: defineAsyncComponent(() => import('@/assets/svg/LinkedIn.vue'))
         },
         {
